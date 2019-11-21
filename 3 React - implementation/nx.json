@@ -1,0 +1,33 @@
+{
+  "npmScope": "maltajs",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "client-react": {
+      "tags": []
+    },
+    "client-react-e2e": {
+      "tags": []
+    },
+    "react-feature-list": {
+      "tags": []
+    },
+    "react-feature-details": {
+      "tags": []
+    },
+    "react-ui-components": {
+      "tags": []
+    },
+    "react-data-access-react": {
+      "tags": []
+    },
+    "react-utils-formatter": {
+      "tags": []
+    }
+  }
+}
