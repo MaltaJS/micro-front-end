@@ -1,0 +1,40 @@
+.game-card {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+
+    .time {
+        width: 100px;
+        color: #868585;
+    }
+
+    .oponents {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .odds {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        justify-content: space-between;
+
+        .odd {
+            width: 80px;
+            background-color: #266326;
+            margin: 2px;
+            font-size: 12px;
+            padding: 10px 20px;
+            border-radius: 3px;
+            color: #ffffff;
+            text-align: center;
+
+            :first-child {
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+}
