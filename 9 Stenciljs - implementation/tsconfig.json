@@ -1,0 +1,46 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@maltajs/react/feature-list": ["libs/react/feature-list/src/index.ts"],
+      "@maltajs/react/feature-details": [
+        "libs/react/feature-details/src/index.ts"
+      ],
+      "@maltajs/react/ui-components": ["libs/react/ui-components/src/index.ts"],
+      "@maltajs/react/data-access-react": [
+        "libs/react/data-access-react/src/index.ts"
+      ],
+      "@maltajs/react/utils-formatter": [
+        "libs/react/utils-formatter/src/index.ts"
+      ],
+      "@maltajs/angular/ui-components": [
+        "libs/angular/ui-components/src/index.ts"
+      ],
+      "@maltajs/angular/data-access-angular": [
+        "libs/angular/data-access-angular/src/index.ts"
+      ],
+      "@maltajs/angular/feature-list": [
+        "libs/angular/feature-list/src/index.ts"
+      ],
+      "@maltajs/angular/utils-formatter": [
+        "libs/angular/utils-formatter/src/index.ts"
+      ],
+      "@maltajs/shared/ui": ["libs/shared/ui/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
