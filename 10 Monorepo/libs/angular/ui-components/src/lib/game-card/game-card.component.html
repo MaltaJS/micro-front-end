@@ -1,0 +1,29 @@
+<div class="game-card">
+    <div class="time">
+        {{sport.start | gameDate: 'EEE hh:mm'}}
+    </div>
+
+    <div class="oponents">
+        <h4>{{sport.home}}</h4>
+        <h4>{{sport.away}}</h4>
+    </div>
+
+    <div class="odds">
+        <div class="odd">
+            <p class="ratio">{{sport.home_odd}}</p>
+            <p class="team">{{sport.home}}</p>
+        </div>
+
+
+        <div class="odd">
+            <p class="ratio">{{sport.draw_odd}}</p>
+            <p class="team">Draw</p>
+        </div>
+
+
+        <div class="odd">
+            <p class="ratio">{{sport.away_odd}}</p>
+            <p class="team">{{sport.away}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc",
+    "types": []
+  },
+  "files": ["src/main.ts", "src/polyfills.ts"],
+  "include": [
+    "**/*.ts",
+    "../react/**/*.tsx",
+    "../angular/**/*.ts",
+    "../../../libs/shared/ui/wrappers/**/*.ts"
+  ],
+  "exclude": [
+    "src/test-setup.ts", 
+    "**/*.spec.ts",
+    "../angular/**/*.spec.ts",
+    "../react/**/*.spec.tsx"
+  ]
+}
