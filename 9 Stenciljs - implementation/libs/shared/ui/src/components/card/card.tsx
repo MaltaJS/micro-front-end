@@ -14,12 +14,12 @@ export class Card {
   @Prop() styles: any;
 
   render() {
-    const cardStyles = JSON.parse(this.styles);
+    const cardStyles = this.styles ? JSON.parse(this.styles) : {};
 
     return (
-      <Host style={cardStyles}>
+      <div class="card" style={cardStyles}>
         <slot></slot>
-      </Host>
+      </div>
     )
   }
 }

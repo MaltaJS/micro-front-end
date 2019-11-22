@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useGames } from '@maltajs/react/data-access-react';
 import { GameCard } from '@maltajs/react/ui-components';
+import { MaltajsCard } from 'ui/wrappers/react/maltajs-ui';
 import styled from 'styled-components';
 
 /* eslint-disable-next-line */
@@ -24,7 +25,9 @@ export const ReactFeatureList = (props: ReactFeatureListProps) => {
     <StyledReactFeatureList>
       {games.map((game, index) => 
         <StyledLink key={index} to={`/${game.id}`}>
-          <GameCard game={game} />
+          <MaltajsCard styles='{ "margin": "1em", "max-width": "300px"}'>
+            <GameCard game={game} />
+          </MaltajsCard>
         </StyledLink>
       )}
     </StyledReactFeatureList>

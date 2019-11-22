@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { GamesListComponent } from './games-list/games-list.component';
@@ -15,6 +15,7 @@ import { AngularDataAccessAngularModule } from '@maltajs/angular/data-access-ang
       {path: '', pathMatch: 'full', component: GamesListComponent}
     ])
   ],
-  declarations: [GamesListComponent]
+  declarations: [GamesListComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AngularFeatureListModule {}

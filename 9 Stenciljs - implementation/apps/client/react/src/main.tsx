@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from './app/app';
 
-import { applyPolyfills, defineCustomElements } from '@maltajs/ui/loader';
+import { applyPolyfills, defineCustomElements } from 'ui/loader';
 
 ReactDOM.render(
   <BrowserRouter>

@@ -2,7 +2,6 @@ import React from 'react';
 
 import styled from 'styled-components';
 import { Game } from '@maltajs/react/data-access-react';
-import { Card } from '../card/card';
 import { potFormatter } from '@maltajs/react/utils-formatter';
 
 /* eslint-disable-next-line */
@@ -42,14 +41,14 @@ const StyledH5 = styled.h5`
 export const GameCard = (props: GameCardProps) => {
   const { image, name, pot, provider} = props.game
   return (
-    <Card>
+    <>
       <StyledImg src={image} />
       <StyledDiv>
         <StyledH2>{name}</StyledH2>
         <StyledP>{potFormatter(pot)}</StyledP>
         <StyledH5>{provider}</StyledH5>
       </StyledDiv>
-    </Card>
+    </>
   );
 };
 
